@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Amazon.es: compra online de electrónica, libros, deporte, hogar, moda y mucho más.</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Clon visual de Amazon">
+	<meta name="keywords" content="Amazon">
+	<meta name="author" content="Mateo Tascon Gomez">
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="assets/faviconAmazon.png" type="image/x-icon">
+	<link href="https://fonts.cdnfonts.com/css/amazon-ember" rel="stylesheet">
+	<script src="main.js" defer></script>
+</head>
+<body>
+		<header>
+			<!-- NAV-MAIN-->
+			<nav class="nav-main">
+				<div class="logo-and-location">
+					<div class="logo-amazon">
+						<a href="https://www.amazon.es/ref=nav_logo">
+							<img src="assets/logoAmazon.png" alt="Logo de amazon">
+						</a>
+					</div>
+					<div class="location">
+						<a href="#">
+							<img src="assets/location.png" alt="Icono de localizacion">
+							<p>Actualizar ubicación</p>
+						</a>
+					</div>
+				</div>
+				<div class="search">
+					<form onsubmit="return false;">
+						<select name="userDepartament" id="departament">
+							<option value="departamentos">Todos los departamentos</option>
+							<option value="alexa">Alexa Skills</option>
+							<option value="comida">Alimentiación y bebidas</option>
+							<option value="amazonFresh">Amazon Fresh</option>
+							<option value="amazonGlobalStore">Amazon Global Store</option>
+							<option value="amazonSegundaMano">Amazon Segunda Mano</option>
+							<option value="android">Appstore para Android</option>
+							<option value="audible">Audible audiolibros y podcasts exclusivos</option>
+							<option value="bebe">Bebé</option>
+							<option value="belleza">Belleza</option>
+							<option value="herramientas">Bricolaje y Herramientas</option>
+							<option value="tarjetaRegalo">Cheques regalo</option>
+							<option value="vehiculos">Coche y Moto - Piezas y accesorios</option>
+							<option value="deporte">Deportes y are libre</option>
+							<option value="dia">DIA</option>
+							<option value="dispositivosAmazon">Dispositivos de Amazon</option>
+							<option value="electronica">electrónica</option>
+							<option value="viaje">Equipaje y accesorios de viaje</option>
+							<option value="handmade">Handmade</option>
+							<option value="hogar">Hogar y cocina</option>
+							<option value="iluminacion">Iluminacion</option>
+							<option value="informatica">Informatica</option>
+							<option value="im">Instrumentos musicales</option>
+							<option value="jardin">Jardín</option>
+							<option value="juguetes">Juguetes y Juegos</option>
+							<option value="libros">Libros</option>
+							<option value="luxury">Luxury Stores</option>
+							<option value="diezEuros">Menos de 10€</option>
+							<option value="mecadoPaz">Mercado de la Paz</option>
+							<option value="moda">Moda</option>
+							<option value="mujer">&nbsp;&nbsp;&nbsp;Mujer</option>
+							<option value="hombre">&nbsp;&nbsp;&nbsp;Hombre</option>
+							<option value="nina">&nbsp;&nbsp;&nbsp;Niña</option>
+							<option value="nino">&nbsp;&nbsp;&nbsp;Niño</option>
+							<option value="bebe">&nbsp;&nbsp;&nbsp;Bebé</option>
+							<option value="musicaDigital">Música digital</option>
+							<option value="musica">Música: CDs y Vinilos</option>
+							<option value="oficina">Oficina y papelería</option>
+							<option value="peliculas">Películas y TV</option>
+							<option value="primeVideo">Prime Video</option>
+							<option value="mascotas">Productos para mascotas</option>
+							<option value="salud">Salud y cuidado personal</option>
+							<option value="software">Software</option>
+							<option value="suscripcion">Suscríbete y Ahorra</option>
+							<option value="kindle">Tienda Kindle</option>
+							<option value="videojuegos">Videojuegos</option>
+						</select>
+						<input type="search" name="userSearch" autocomplete="off" placeholder="Buscar Amazon.es">
+						<div>
+							<input type="image" src="assets/search.png" alt="Botón de busqueda">
+						</div>
+					</form>
+				</div>
+				<div class="account-and-shoppingCart">
+					<div class="account">
+						<a href="#">
+							<p>Hola, identifícate</p>
+							<p>Cuenta y listas</p>
+						</a>
+						<!-- ACCOUNT LIST-->
+						<div class="account-list">
+							<div>
+								<a href="https://www.amazon.es/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.es%2Fref%3Dnav_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=esflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0"><p>Identificarse</p></a>
+								<p>¿Eres un cliente nuevo? <a href="https://www.amazon.es/ap/register?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.es%2Fref%3Dnav_logo%2F%3F_encoding%3DUTF8%26ref_%3Dnav_newcust&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=esflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">Empieza aquí</a></p>
+							</div>
+							<div>
+								<div>
+									<p>Mis listas</p>
+									<ul>
+										<li><a href="https://www.amazon.es/hz/wishlist/ls?triggerElementID=createList&ref_=nav_ListFlyout_navFlyout_createList_lv_redirect">Crea una lista de deseos</a></li>
+										<li><a href="https://www.amazon.es/wedding/home?ref_=nav_ListFlyout_gno_listpop_wr">Lista de boda</a></li>
+										<li><a href="https://www.amazon.es/baby-reg/homepage?ref_=nav_ListFlyout_gno_listpop_br">Lista de nacimiento</a></li>
+										<li><a href="https://www.amazon.es/discover?ref_=nav_ListFlyout_sbl">Descubre tu estilo</a></li>
+										<li><a href="https://www.amazon.es/showroom?ref_=nav_ListFlyout_srm_your_desk_wl_es">Explorar Showroom</a></li>
+									</ul>
+								</div>
+								<div>
+									<p>Mi cuenta</p>
+									<ul>
+										<li><a href="https://www.amazon.es/gp/css/homepage.html?ref_=nav_AccountFlyout_ya">Mi cuenta</a></li>
+										<li><a href="https://www.amazon.es/gp/css/order-history?ref_=nav_AccountFlyout_orders">Mis pedidos</a></li>
+										<li><a href="https://sell.amazon.es/vender-online?refTag=sell&ld=AZESSOA_flyout">Tu cuenta de vendedor</a></li>
+										<li><a href="https://www.amazon.es/hz/wishlist/ls?requiresSignIn=1&ref_=nav_AccountFlyout_wl">Mi lista de deseos</a></li>
+										<li><a href="https://www.amazon.es/gp/yourstore?ref_=nav_AccountFlyout_recs">Mis recomendaciones</a></li>
+										<li><a href="https://www.amazon.es/yourpets?ref_=nav_AccountFlyout_ya_pp">Mis mascotas</a></li>
+										<li><a href="https://www.amazon.es/hz5/yourmembershipsandsubscriptions?ref_=nav_AccountFlyout_digital_subscriptions">Pertenencia a programas y suscripciones</a></li>
+										<li><a href="https://www.amazon.es/gp/primecentral?ref_=nav_AccountFlyout_prime">Mi suscripción a Amazon Prime</a></li>
+										<li><a href="https://www.amazon.es/auto-deliveries?ref_=nav_AccountFlyout_sns">Mis suscripciones a productos</a></li>
+										<li><a href="https://www.amazon.es/hz/mycd/myx?pageType=content&ref_=nav_AccountFlyout_myk">Gestionar contenido y dispositivos</a></li>
+										<li><a href="https://www.amazon.es/gp/kindle/ku/ku_central?ref_=nav_AccountFlyout_ku">Mi Kindle Unlimited</a></li>
+										<li><a href="https://music.amazon.es/?ref=nav_youraccount_cldplyr">Mi biblioteca musical</a></li>
+										<li><a href="https://www.amazon.es/gp/video/ssoredirect?pvp=/ref%3Ddvm_crs_gno_es_xs_s_dk_nav_eg_al_yracc_0_u&ref_=nav_AccountFlyout_dvm_crs_gno_es_xs_s_dk_nav_eg_al_yracc_0_u">Mi Prime Video</a></li>
+										<li><a href="https://www.amazon.es/photos?ref_=nav_AccountFlyout_photos">Tu Amazon Photos</a></li>
+										<li><a href="https://www.amazon.es/gp/mas/your-account/myapps?ref_=nav_AccountFlyout_aad">Mis apps y dispositivos</a></li>
+										<li><a href="https://www.amazon.es/gp/browse.html?node=14862331031&ref_=nav_AccountFlyout_esb2b_reg_bottom">Crean una cuenta Business gratis</a></li>
+									</ul>
+								</div>
+							</div>
+							<!-- END ACCOUNT LIST-->
+						</div>
+					</div>
+					<div class="orders">
+						<a href="https://www.amazon.es/gp/css/order-history?ref_=nav_orders_first">
+							<p>Devoluciones</p>
+							<p>y Pedidos</p>
+						</a>
+					</div>
+					<div class="shoppingCart">
+						<a href="https://www.amazon.es/gp/cart/view.html?ref_=nav_cart">
+							<img src="assets/shoppingCart.png" alt="Carro de compra">
+							<p>Cesta</p>
+						</a>
+					</div>
+				</div>
+			</nav>
+			<!-- END NAV-MAIN -->
+
+			<!-- NAV-SECONDARY -->
+			<nav class="nav-secondary">
+				<ul>
+					<li>
+						<img src="assets/menu.png" alt="Menú">
+						<p>Todo</p>
+						<!-- NAV-MENU -->
+						<div class="menu">
+							<div class="menu-profile">
+								<img src="assets/profile.png" alt="Icono donde va la foto de perfil">
+								<p>Hola, identifícate</p>
+							</div>
+							<div class="menu-options">
+								<div>
+									<p>Tendencias</p>
+									<ul>
+										<li>Los más vendidos</li>
+										<li>últimas novedades</li>
+										<li>Productos del momento</li>
+									</ul>
+								</div>
+								<div>
+									<p>Contenido y dispositivos digitales</p>
+									<ul>
+										<li>Amazon Prime Video</li>
+										<li>Amazon Music</li>
+										<li>Amazon Photos</li>
+										<li>Echo y Alexa</li>
+										<li>Amazon Fire TV</li>
+										<li>E-readers y eBooks Kindle</li>
+										<li>Appstore para Android</li>
+										<li>Audible Audiolibros y Podcasts</li>
+									</ul>
+								</div>
+								<div>
+									<p>Buscar por departamento</p>
+									<ul>
+										<li>Libros</li>
+										<li>Cine, TV y Música</li>
+										<li>Electrónica</li>
+										<li>Informática y oficina</li>
+										<li>Videojuegos</li>
+										<li>Juguetes y bebé</li>
+										<li>Hogar, Jardín y Bricolaje</li>
+										<li>Todo para mascotas</li>
+										<li>Alimentación y bebidas</li>
+										<li>Belleza y Salud</li>
+										<li>Moda</li>
+										<li>Deportes y aire libre</li>
+										<li>Coche y moto</li>
+										<li>Industria, empresas y ciencia</li>
+									</ul>
+								</div>
+								<div>
+									<p>Programas y características</p>
+									<ul>
+										<li>Amazon Fresh</li>
+										<li>Supermercado DIA</li>
+										<li>Mercado de la paz</li>
+										<li>Cheques Regalo y Recargas</li>
+										<li>Handmade</li>
+										<li>Luxury Stores</li>
+										<li>Amazon Custom</li>
+										<li>Nuevos Descubrimientos</li>
+										<li>Amazon Outlet</li>
+										<li>Regalos y lista de regalos</li>
+										<li>Made in Italy</li>
+										<li>Prime Prueba primero, paga después</li>
+										<li>Amazon Business</li>
+										<li>Amazon Second Chance</li>
+										<li>Climate Pledge Friendly</li>
+									</ul>
+								</div>
+								<div>
+									<p>Ayuda y ajustes</p>
+									<ul>
+										<li>Mi cuenta</li>
+										<li>Atención al cliente</li>
+										<li>Identificarse</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- END NAV-MENU -->
+					</li>
+					<li>
+						<a href="https://www.amazon.es/fmc/learn-more?ref_=nav_cs_groceries">Supermercado</a>
+						<!-- NAV-SECONDARY-SUPERMARKET -->
+						<!-- SCRIPT -->
+					</li>
+					<li>
+						<a href="https://www.amazon.es/gp/bestsellers/?ref_=nav_cs_bestsellers">Lo más vendido</a>
+					</li>
+					<li>
+						<a href="https://www.amazon.es/amazonbasics/?field-lbr_brands_browse-bin=AmazonBasics&ref_=nav_cs_amazonbasics">Amazon Basics</a>
+					</li>
+					<li>
+						<a href="https://www.amazon.es/deals?ref_=nav_cs_gb">Ofertas</a>
+					</li>
+					<li>
+						<a href="https://www.amazon.es/music/player?ref_=nav_cs_music">Música</a>
+					</li>
+					<li>
+						<a href="https://www.amazon.es/prime?ref_=nav_cs_primelink_nonmember">Prime</a>
+						<!-- NAV-SECONDARY-PRIME -->
+						<div class="nav-secondary-prime">
+							<div>
+								<img src="assets/shop/navPrime_1.png" alt="Logo de amazon prime">
+								<p>Envío más rápido y GRATIS con Amazon Prime</p>
+								<a href="https://www.amazon.es/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.es%2Fhp%2Fwlp%2Fpipeline%2Fmembersignup%3FingressID%3Dprime_WlpPin%26locationID%3Dprime_WlpPin_T2&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=amzn_wlpmember_es&openid.mode=checkid_setup&language=es_ES&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">
+									<p>Prueba Amazon Prime GRATIS durante 30 días</p>
+								</a>
+								<img id="perrito" src="assets/shop/navPrime_2.png" alt="Imagen de paquetes amazon con un perrito">
+							</div>
+						</div>
+						<!-- END NAV-SECONDARY-PRIME -->
+					</li>
+					<li>
+						<a href="https://www.amazon.es/gp/new-releases/?ref_=nav_cs_newreleases">Últimas novedades</a>
+					</li>
+					<li>
+						<a href="https://www.amazon.es/cheques-regalo/b/?ie=UTF8&node=3564279031&ref_=nav_cs_gc">Tarjetas regalo</a>
+						<!-- NAV-SECONDARY-GIFTCARDS -->
+						<!-- SCRIPT -->
+					</li>
+					<li>
+						<a href="https://www.amazon.es/informatica/b/?ie=UTF8&node=667049031&ref_=nav_cs_pc">Informática</a>
+					</li>
+					<li>
+						<a href="https://www.amazon.es/Hogar-y-cocina/b/?ie=UTF8&node=599391031&ref_=nav_cs_home">Hogar y cocina</a>
+					</li>
+					<li>
+						<a href="https://www.amazon.es/Audible-Libros-y-Originales/b/?ie=UTF8&node=17465192031&ref_=nav_cs_audible">Audible</a>
+					</li>
+					<li>
+						<a href="https://www.amazon.es/electronica/b/?ie=UTF8&node=599370031&ref_=nav_cs_electronics">Electrónica y fotografía</a></li>
+					<li>
+						<a href="https://www.amazon.es/Juguetes-y-juegos/b/?ie=UTF8&node=599385031&ref_=nav_cs_toys">Juguetes y juegos</a>
+					</li>
+					<li>
+						<a href="https://www.amazon.es/videojuegos-accesorios-consolas/b/?ie=UTF8&node=599382031&ref_=nav_cs_video_games">Videojuegos</a>
+					</li>
+					<li>
+						<a href="https://www.amazon.es/comprar-libros-espa%C3%B1ol/b/?ie=UTF8&node=599364031&ref_=nav_cs_books">Libros</a>
+					</li>
+					<li>
+						<a href="https://www.amazon.es/Bricolaje-Herramientas-Fontaneria-Ferreteria-Jardineria/b/?ie=UTF8&node=2454133031&ref_=nav_cs_hi">Bricolaje y herramientas</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- END NAV-SECONDARY -->
+		</header>
+		<!-- END HEADER -->
+		 <!-- MAIN -->
+		<main>
+			<!-- STORE -->
+			<div class="store">
+			</div>
+			<!-- END STORE -->
+		</main>
+		<!-- END MAIN -->
+		<!-- FOTTER -->
+		 <footer>
+				<!-- COME-BACK -->
+				<div class="come-back">
+					<a href="https://www.amazon.es/ref=nav_logo">
+						<p>Volver arriba</p>
+					</a>
+				</div>
+				<!-- END COME-BACK -->
+				<!-- LIST-FOOTER -->
+				<div class="list-footer">
+					<div>
+						<p>Conócenos</p>
+						<ul>
+							<li>
+								<a href="https://www.amazon.es/gp/browse.html?node=923374031&ref_=footer_gw_m_b_careers">Trabajar en amazon</a>
+							</li>
+							<li>
+								<a href="https://www.amazon.es/sobreamazon">Sobre Amazon.es</a>
+							</li>
+							<li>
+								<a href="https://sostenibilidad.aboutamazon.es/?utm_source=gateway&utm_medium=footer&ref_=susty_footer">Sostenibilidad</a>
+							</li>
+							<li>
+								<a href="https://www.amazon.science/">Amazon Science</a>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<p>Gana dinero con nosotros</p>
+						<ul>
+							<li>
+								<a href="https://services.amazon.es/sell.html?ld=AZESSOAFooter&ref_=sdes_soa">Vender en Amazon</a>
+							</li>
+							<li>
+								<a href="https://sell.amazon.es/programas/amazon-business/?ld=AZESB2BRetailFooter">Vender en Amazon Business</a>
+							</li>
+							<li>
+								<a href="https://services.amazon.es/handmade.htm?ref=azessoafoo&ld=AZESHNDFooter">Vende en Amazon Handmade</a>
+							</li>
+							<li>
+								<a href="https://sell.amazon.es/propietarios-de-marcas/?ref_=AOESABRLGNRFOOT&ld=AZESBrandRegFooter#inscribe-tu-marca">Desarrolla y protege tu marca</a>
+							</li>
+							<li>
+								<a href="https://afiliados.amazon.es/">Programa de afiliados</a>
+							</li>
+							<li>
+								<a href="https://services.amazon.es/servicios/logistica-de-amazon/funciones-y-ventajas/?ld=AZESFBAFooter">Logística de Amazon</a>
+							</li>
+							<li>
+								<a href="https://supply.amazon.com/?ref_=footer_sta&lang=es-ES">Suministrar a Amazon</a>
+							</li>
+							<li>
+								<a href="https://advertising.amazon.es/products-self-serve?ref_=ext_amzn_ftr">Promociona tus productos</a>
+							</li>
+							<li>
+								<a href="https://kdp.amazon.com/?language=es_ES">Publica tu libro en kindle</a>
+							</li>
+							<li>
+								<a href="https://pay.amazon.com/es?ld=AWREESAPAFooter">Amazon Pay</a>
+							</li>
+							<li>
+								<a href="https://www.amazon.es/b?node=13350923031">Alojar un Amazon Hub</a>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<p>Métodos de pago Amazon</p>
+						<ul>
+							<li>
+								<a href="https://www.amazon.es/gp/help/customer/display.html?nodeId=201262600&ref_=footer_payment">Métodos de pago</a>
+							</li>
+							<li>
+								<a href="https://www.amazon.es/gp/help/customer/display.html?nodeId=201239250&ref_=footer_tfx">Conversor de divisas de Amazon</a>
+							</li>
+							<li>
+								<a href="https://www.amazon.es/gp/gc?ref_=footer_giftcards">Tarjetas de regalo</a>
+							</li>
+							<li>
+								<a href="https://www.amazon.es/gp/gc/create?ref_=footer_topup_es">Recarga online</a>
+							</li>
+							<li>
+								<a href="https://www.amazon.es/gp/browse.html?node=15417070031&ref_=footer_purchase_code">Recarga en tienda</a>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<p>¿Necesitas ayuda?</p>
+						<ul>
+							<li>
+								<a href="https://www.amazon.es/gp/help/customer/display.html?nodeId=GDFU3JS5AL6SYHRD&ref_=footer_covid">Amazon y COVID-19</a>
+							</li>
+							<li>
+								<a href="https://www.amazon.es/gp/css/order-history?ref_=footer_hp_ss_comp_tmp">Localizar o gestionar compras</a>
+							</li>
+							<li>
+								<a href="https://www.amazon.es/gp/help/customer/display.html?nodeId=200522630&ref_=footer_shiprates">Tarifas y políticas de envío</a>
+							</li>
+							<li>
+								<a href="https://www.amazon.es/gp/prime?ref_=footer_prime">Amazon Prime</a>
+							</li>
+							<li>
+								<a href="https://www.amazon.es/gp/css/returns/homepage.html?ref_=footer_hy_f_4">Devolver o reemplazar productos</a>
+							</li>
+							<li>
+								<a href="https://www.amazon.es/gp/browse.html?node=22380251031&ref_=footer_disposal">Reciclaje</a>
+							</li>
+							<li>
+								<a href="https://www.amazon.es/hz/mycd/myx?ref_=footer_myk">Gestionar contenido y dispositivos</a>
+							</li>
+							<li>
+								<a href="https://www.amazon.es/your-product-safety-alerts?ref_=footer_bsx_ypsa">Retiradas y alertas de seguridad de productos</a>
+							</li>
+							<li>
+								<a href="https://www.amazon.es/gp/browse.html?node=5061838031&ref_=footer_mobapp">App Amazon</a>
+							</li>
+							<li>
+								<a href="https://www.amazon.es/gp/help/customer/display.html?nodeId=200507590&ref_=footer_gw_m_b_cs">Atención al Cliente</a>
+							</li>
+							<li>
+								<a href="https://www.amazon.es/gp/help/customer/display.html?nodeId=201239260&ref_=footer_vat">IVA sobre los bienes</a>
+							</li>
+							<li>
+								<a href="https://www.amazon.es/gp/help/customer/display.html?nodeId=GUUVBZ8WGVFP8R8X&ref_=nav_foot_accessibility">Acessibilidad</a>
+							</li>
+							<li>
+								<a href="https://www.amazon.es/registries?ref_=nav_footer_registry_giftlist_desktop">Listas de regalos</a>
+							</li>
+							<li>
+								<a href="https://www.amazon.es/gp/help/customer/display.html?nodeId=TLtMJsPGBmJPpN3hvy&ref_=footer_report_illegal_content">Denunciar contenido ilegal</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- END LIST-FOOTER -->
+				 <!-- AMAZON-REGIONS -->
+				<div class="amazon-regions">
+					<div>
+						<a href="https://www.amazon.es/?ref_=footer_logo">
+							<img src="assets/logoAmazon.png" alt="Logo de Amazon">
+						</a>
+					</div>
+					<div>
+						<ul>
+							<li>
+								<a href="https://www.amazon.com.au/ref=footer_au">Australia</a>
+							</li>
+							<li>
+								<a href="https://www.amazon.de/ref=footer_de">Alemania</a>
+							</li>
+							<li>
+								<a href="https://www.amazon.com.br/ref=footer_br">Brasil</a>
+							</li>
+							<li>
+								<a href="https://www.amazon.ca/ref=footer_ca">Canadá</a>
+							</li>
+							<li>
+								<a href="https://www.amazon.cn/ref=footer_cn">China</a>
+							</li>
+							<li>
+								<a href="https://www.amazon.com/ref=footer_us">Estados Unidos</a>
+							</li>
+							<li>
+								<a href="https://www.amazon.fr/ref=footer_fr">Francia</a>
+							</li>
+							<li>
+								<a href="https://www.amazon.in/ref=footer_in">India</a>
+							</li>
+							<li>
+								<a href="https://www.amazon.it/ref=footer_it">Italia</a>
+							</li>
+							<li>
+								<a href="https://www.amazon.co.jp/ref=footer_jp">Japón</a>
+							</li>
+							<li>
+								<a href="https://www.amazon.com.mx/ref=footer_mx">México</a>
+							</li>
+							<li>
+								<a href="https://www.amazon.nl/ref=footer_nl">Países Bajos</a>
+							</li>
+							<li>
+								<a href="https://www.amazon.pl/ref=footer_pl">Polonia</a>
+							</li>
+							<li>
+								<a href="https://www.amazon.ae/ref=footer_ae">Emiratos Árabes Unidos</a>
+							</li>
+							<li>
+								<a href="https://www.amazon.co.uk/ref=footer_uk">Reino Unido</a>
+							</li>
+							<li>
+								<a href="https://www.amazon.sg/ref=footer_sg">Singapur</a>
+							</li>
+							<li>
+								<a href="https://www.amazon.com.tr/ref=footer_tr">Turquía</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- END AMAZON-REGIONS -->
+				<!-- MORE-ON-AMAZON -->
+				<div class="more-on-amazon">
+					<div>
+						<div>
+							<div>
+								<a href="https://music.amazon.es/?ref=dm_aff_amz_es">
+									<p>Amazon Music</p>
+									<p>Transmite millones de canciones</p>
+								</a>
+							</div>
+							<div>
+								<a href="https://www.iberlibro.com/">
+									<p>IberLibro</p>
+									<p>Libros, arte & artículos de colección</p>
+								</a>
+							</div>
+							<div>
+								<a href="https://aws.amazon.com/es/?sc_channel=EL&sc_campaign=ES_amazonfooter">
+									<p>Amazon Web Services</p>
+									<p>Servicios Cloud Computing de Amazon</p>
+								</a>
+							</div>
+							<div>
+								<a href="https://kdp.amazon.com/?language=es_ES">
+									<p>Kindle Direct Publishing</p>
+									<p>Publica tu libro en papel y digital de manera independiente</p>
+								</a>
+							</div>
+							<div>
+								<a href="https://www.amazon.es/gp/browse.html?node=3582001031&ref_=footer_wrhsdls">
+									<p>Amazon Segunda mano</p>
+									<p>Productos devueltos y como nuevos</p>
+								</a>
+							</div>
+							<div>
+								<a href="https://www.shopbop.com/">
+									<p>Shopbop</p>
+									<p>Marcas de moda de diseño</p>
+								</a>
+							</div>
+							<div>
+								<a href="https://www.amazon.es/gp/browse.html?node=14862331031&ref_=nav_footer_business">
+									<p>Amazon Business</p>
+									<p>Servicio para clientes de empresa</p>
+								</a>
+							</div>
+							<div>
+								<a href="https://www.audible.es/">
+									<p>Audible</p>
+									<p>Disfruta de miles de audiolibros y podcasts originales</p>
+								</a>
+							</div>
+						</div>
+						<div>
+							<ul>
+								<li>
+									<a href="https://www.amazon.es/gp/help/customer/display.html?nodeId=201909000&ref_=footer_cou">Condiciones de uso y Venta</a>
+								</li>
+								<li>
+									<a href="https://www.amazon.es/gp/help/customer/display.html?nodeId=201909010&ref_=footer_privacy">Aviso de privacidad</a>
+								</li>
+								<li>
+									<a href="https://www.amazon.es/gp/help/customer/display.html?nodeId=201909250&ref_=footer_legal_area">Área legal</a>
+								</li>
+								<li>
+									<a href="https://www.amazon.es/gp/help/customer/display.html?nodeId=201890250&ref_=footer_cookies_notice">Cookies</a>
+								</li>
+								<li>
+									<a href="https://www.amazon.es/gp/help/customer/display.html?nodeId=201909150&ref_=footer_Interest_Based_Ads_Notice">Publicidad basada en intereses</a>
+								</li>
+							</ul>
+							<p>© 1996-2024, Amazon.com, Inc. o sus afiliados</p>
+						</div>
+					</div>
+				</div>
+				<!-- END MORE-ON-AMAZON -->
+		 </footer>
+		 <!-- END FOTTER -->
+	</body>
+</html>
