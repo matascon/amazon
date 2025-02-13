@@ -1059,6 +1059,7 @@ footer {
 /*--->NAV-SECONDARY<---*/
 
 	.nav-secondary > ul {
+		justify-content: flex-start;
 		flex-wrap: nowrap;
 		overflow-x: scroll;
 	}
